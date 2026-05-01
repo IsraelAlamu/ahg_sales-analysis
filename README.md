@@ -3,9 +3,12 @@
 ## 📌 Project Overview
 This project analyzes sales performance across regions, products, and sales channels (online vs in-store) to uncover trends and support business decision-making.
 
+## 🎯 Business Problem
+Adventure Hardware Group (AHG) is experiencing variations in sales performance across regions and sales channels (online vs in-store). The business needs to understand key drivers of revenue, customer purchasing behavior, and the impact of discounting in order to improve profitability and optimize sales strategy.
+
 ## 🛠 Tools Used
 - SQL (data extraction & transformation)
-- Power BI (dashboard & visualization)
+- Power BI (data visualization & dashboards)
 
 ## 📊 Key Insights
 - The online channel generated a higher number of orders but contributed less overall revenue compared to in-store sales, indicating lower average transaction value (ATV).
@@ -28,6 +31,14 @@ This project analyzes sales performance across regions, products, and sales chan
 - Optimize discount strategies to ensure they contribute positively to revenue rather than eroding margins.
 
 - Investigate underperforming regions and implement targeted campaigns to boost sales.
+
+## 📷 Dashboard Preview
+
+### Sales Overview
+![Sales Dashboard](PASTE-YOUR-IMAGE-LINK-HERE)
+
+### Product Analysis
+![Product Dashboard](PASTE-YOUR-IMAGE-LINK-HERE)
 
 
 
