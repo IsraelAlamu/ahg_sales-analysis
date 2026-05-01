@@ -12,14 +12,35 @@ Adventure Hardware Group (AHG) is experiencing variations in sales performance a
 
 - ## 💻 SQL Analysis
 
-The SQL query was used to extract, clean, and prepare the dataset for Power BI analysis. It combines sales orders, products, customer details, store information, and territory data into one analysis-ready table.
+The SQL query was used to extract, clean, and prepare the dataset for Power BI analysis by combining sales, product, and customer data into an order-level dataset.
 
-Key SQL work included:
-- Creating an order-level summary using a CTE
-- Joining sales, product, customer, store, and territory tables
-- Creating customer age groups and demographic fields
-- Mapping sales channels into Online and Store
-- Calculating revenue, cost, discount value, total quantity, and distinct products per order
+### 🔍 Sample Query
+
+```sql
+WITH OrderSummary AS (
+    SELECT 
+        SOD.SalesOrderID,
+        SUM(SOD.OrderQty) AS TotalQty,
+        SUM(SOD.LineTotal) AS TotalSales,
+        STRING_AGG(PP.[Name], ', ') AS ProductList,
+        SUM(SOD.UnitPrice * SOD.OrderQty) AS GrossAmount,
+        SUM(SOD.UnitPrice * SOD.OrderQty * SOD.UnitPriceDiscount) AS DiscountAmount,
+        SUM(PP.StandardCost * SOD.OrderQty) AS CostAmount
+    FROM Sales.SalesOrderDetail AS SOD
+    JOIN Production.Product AS PP
+        ON PP.ProductID = SOD.ProductID
+    GROUP BY SOD.SalesOrderID
+)
+
+SELECT 
+    SOH.SalesOrderID,
+    SOH.OrderDate,
+    SOH.TotalDue AS Revenue,
+    OS.TotalQty AS ItemsPerTransaction,
+    OS.TotalSales AS NetProductRevenue
+FROM Sales.SalesOrderHeader AS SOH
+LEFT JOIN OrderSummary AS OS 
+    ON OS.SalesOrderID = SOH.SalesOrderID;
 
 👉 [View Full SQL File](./SQL/ahg-sales-analysis.sql)
 
