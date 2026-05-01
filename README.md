@@ -42,7 +42,7 @@ Adventure Hardware Group (AHG) is experiencing variations in sales performance a
 
 ### Sales Overview
 <p align="center">
-  <img src="YOUR-LINK" width="800"/>
+  <img src="https://github.com/IsraelAlamu/ahg_sales-analysis/blob/main/AHG_Executive_Dashboard_Screenshot.png" width="800"/>
 </p>
 
 ### Product Analysis
