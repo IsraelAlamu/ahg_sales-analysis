@@ -11,7 +11,7 @@ Adventure Hardware Group (AHG) is experiencing variations in sales performance a
 - Power BI (data visualization & dashboards)
 
 ## 📊 Key Insights
-- Store sales demonstrated a declining trend over time, suggesting a shift in customer purchasing behavior and highlighting the need to reassess in-store strategies.
+- Store sales showed a declining trend over time, while online sales increased, indicating a shift in customer purchasing behaviour toward digital channels.
 
 - The online channel generated a higher number of orders but contributed less overall revenue compared to in-store sales, indicating lower average transaction value (ATV).
 
