@@ -71,7 +71,7 @@ LEFT JOIN OrderSummary AS OS
 
 ## 📷 Dashboard Preview
 
-- Below are interactive dashboardsbuilt in power BI showcasing key business insights.
+- Below are interactive dashboards built in power BI showcasing key business insights.
 
 ### Sales Overview
 
