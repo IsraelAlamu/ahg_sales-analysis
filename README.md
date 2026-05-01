@@ -41,6 +41,7 @@ SELECT
 FROM Sales.SalesOrderHeader AS SOH
 LEFT JOIN OrderSummary AS OS 
     ON OS.SalesOrderID = SOH.SalesOrderID;
+```
 
 👉 [View Full SQL File](./SQL/ahg-sales-analysis.sql)
 
