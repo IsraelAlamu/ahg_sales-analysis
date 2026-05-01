@@ -10,6 +10,19 @@ Adventure Hardware Group (AHG) is experiencing variations in sales performance a
 - SQL (data extraction & transformation)
 - Power BI (data visualization & dashboards)
 
+- ## 💻 SQL Analysis
+
+The SQL query was used to extract, clean, and prepare the dataset for Power BI analysis. It combines sales orders, products, customer details, store information, and territory data into one analysis-ready table.
+
+Key SQL work included:
+- Creating an order-level summary using a CTE
+- Joining sales, product, customer, store, and territory tables
+- Creating customer age groups and demographic fields
+- Mapping sales channels into Online and Store
+- Calculating revenue, cost, discount value, total quantity, and distinct products per order
+
+👉 [View Full SQL File](./SQL/ahg-sales-analysis.sql)
+
 ## 📊 Key Insights
 - Store sales showed a declining trend over time, while online sales increased, indicating a shift in customer purchasing behaviour toward digital channels.
 
